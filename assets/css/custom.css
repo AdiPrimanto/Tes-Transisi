@@ -1,0 +1,299 @@
+.form-inline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+}
+.has-search .form-control {
+    /* padding-left: 50px; */
+    /* width: -webkit-fill-available; */
+    /* width: 500px; */
+    background: #596687;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+}
+::placeholder {
+    color: #fff !important;
+}
+.form-control {
+    height: calc(2.5em + .75rem + 2px);
+}
+.px-6 {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+}
+.py-6 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+.mb-6 {
+    margin-bottom: 5rem !important;
+}
+.card-pink {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, #b91d73, #f476ce);
+    text-align: center;
+    border-radius: 20px;
+}
+.card-border {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #6dd5ed;
+    border-radius: 23px;
+}
+.card-green {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(45deg, #00f260, #0575e6);
+    text-align: center;
+    border-radius: 20px;
+}
+.card-purple {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, #7f00ff, #e100ff);
+    text-align: center;
+    border-radius: 20px;
+}
+.card-blue {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, #185a9d, #43cea2);
+    text-align: center;
+    border-radius: 20px;
+}
+.card-orange {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, #f7b733, #fc4a1a);
+    text-align: center;
+    border-radius: 20px;
+}
+.card-black {
+    width: 80px;
+    height: 80px;
+    background-color: #27313c;
+    text-align: center;
+    border-radius: 20px;
+}
+.border-10 {
+    border-radius: 10px;
+}
+
+.badge-info {
+    padding: 0.45em 2em !important;
+    background-color: #ecf5ff !important;
+    color: #409eff !important;
+    border-radius: 15px !important;
+}
+.badge-success {
+    padding: 0.45em 2em !important;
+    background-color: #f0f9eb !important;
+    color: #67c23a !important;
+    border-radius: 15px !important;
+}
+.badge-warning {
+    padding: 0.45em 2em !important;
+    background-color: #fdf6ec !important;
+    color: #e6a23c !important;
+    border-radius: 15px !important;
+}
+.badge-secondary {
+    padding: 0.45em 2em !important;
+    background-color: #f4f4f5 !important;
+    color: #909399 !important;
+    border-radius: 15px !important;
+}
+.badge-transparent {
+    padding: 0.5em !important;
+    background-color: #596687 !important;
+    position: absolute;
+    border-radius: 10px !important;
+    font-size: 100%;
+    top: 15px;
+}
+.btn-add {
+    color: #fff;
+    background-color: #894dc2;
+    border-radius: 10px;
+    box-shadow: 0px 10px 26px -8px rgba(174,91,167,0.76);
+}
+.btn-add:hover {
+    color: #fff;
+    background-color: #8536d0;
+    border-radius: 10px;
+    box-shadow: 0px 10px 26px -8px rgba(174,91,167,0.76);
+}
+.btn-image {
+    color: #eee;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 2px solid #eee;
+    margin-top: -20px;
+    padding: .1rem .5rem !important;
+}
+.text-muted {
+    color: #e0e3e5 !important;
+}
+.text-muted-2 {
+    color: rgb(206, 203, 203) !important;
+}
+
+/* CSS CHECKBOX */
+
+.round {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+  }
+  
+  /* Hide the browser's default checkbox */
+  .round input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    border-radius: 15px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .round:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .round input:checked ~ .checkmark {
+    background-color: #12c2e9;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .round input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .round .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+/* CSS AVATAR */
+.avatar-group .avatar {
+    position: relative;
+    z-index: 2;
+    border: 2px solid #fff;
+}
+.avatar-sm {
+    width: 36px;
+    height: 36px;
+    font-size: .875rem;
+}
+.avatar {
+    color: #fff;
+    background-color: #adb5bd;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.rounded-circle {
+    border-radius: 50%!important;
+}
+.avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+.avatar-group .avatar+.avatar {
+    margin-left: -1rem;
+}
+
+@media (min-width: 768px) {
+    .bg-purple {
+        background-color: #2C394B;
+        min-height: 100vh;
+    }
+    .list-cyber {
+        min-height: 270px;
+    }
+    .btn-search {
+        /* margin-left: -490px; */
+        height: calc(2.5em + .75rem + 2px);
+        border-radius: 10px;
+        background: #596687;
+    }
+}
+
+@media (max-width: 767px) {
+    .bg-purple {
+        background-color: #2C394B;
+        min-height: 100%;
+    }
+    .px-6 {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+    .py-6 {
+        padding-top: 4rem !important;
+        padding-bottom: 2rem !important;
+    }
+    .mb-xs-3 {
+        margin-bottom:1rem!important
+    }
+    .mt-xs-2 {
+        margin-top:2px!important
+    }
+    .my-3 {
+        margin-bottom:2rem!important
+    }
+    .flex-xs-column {
+        -ms-flex-direction: column!important;
+        flex-direction: column!important;
+    }
+    .list-cyber {
+        min-height: 680px;
+    }
+    .btn-search {
+        /* margin-left: -280px; */
+        height: calc(2.5em + .75rem + 2px);
+        border-radius: 10px;
+        background: #596687;
+    }
+    .text-white .col-md-4.col-sm-2 {
+        width: auto;
+    }
+}
